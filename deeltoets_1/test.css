@@ -1,0 +1,10 @@
+.container ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+li {
+    flex-basis: 33%;
+    text-align: center;
+}

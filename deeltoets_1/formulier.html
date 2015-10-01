@@ -13,22 +13,38 @@
 Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
 Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons op.</p>
 
+
     </article>
-    <form>
+    <form action="#">
         <fieldset>
             <legend>Contactgegevens</legend>
-            <p>Naam:<input type='text' name='username' size="15" maxlength="30"/></p>
-            <p>Bedrijf:<input type='text' name='username' size="15" maxlength="30"/></p>
-            <p>Adres:<input type='text' name='username' size="15" maxlength="30"/></p>
-            <p>Postcode:<input type='text' name='username' size="15" maxlength="6"/></p>
-            <p>Plaats:<input type='text' name='username' size="15" maxlength="20"/></p>
-            <p>Telefoon:<input type='tel' name='phone' size="15" maxlength="10"/></p>
-            <p>Email:<input type='tel' name='phone' size="15" maxlength="10"/></p>
+            <label for="naam">Naam</label>
+            <input type="text" name="naam" id="naam" size="15" maxlength="30"><br>
+
+            <label for="bedrijf">Bedrijf</label>
+            <input type="text" name="bedrijf" id="bedrijf" size="15" maxlength="30"><br>
+
+            <label for="adres">Adres</label>
+            <input type="text" name="adres" id="adres" size="15" maxlength="30"><br>
+
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" size="15" maxlength="6"><br>
+
+            <label for="plaats">Plaats</label>
+            <input type="text" name="plaats" id="plaats" size="15" maxlength="30"><br>
+
+            <label for="telefoon">Telefoon</label>
+            <input type="tel" name="telefoon" id="telefoon" size="15" maxlength="30"><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="15" maxlength="30"><br>
         </fieldset>
         <fieldset>
             <legend>Ik wil mij aanmelden</legend>
-            <p><input type="radio" name="aanmelden" value="project"/> Voor een project<br/>
-            <input type="radio" name="aanmelden" value="stagebedrijf"/> Als stagebedrijf</p>
+            <label for="project">Voor een project</label>
+            <input type="radio" name="aanmelden" id="project" value="project"><br>
+            <label for="stagebedrijf">Als stagebedrijf</label>
+            <input type="radio" name="aanmelden" id="stagebedrijf" value="stagebedrijf"><br>
         </fieldset>
     </form>
 
