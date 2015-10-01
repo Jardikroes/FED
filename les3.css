@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body>header {
+    float:left;
+    width: 16em;
+
+}
+
+p+img {
+    width: 15em;
+}
+
+main>article {
+    float: left;
+    width: 32%;
+/*    margin-left: 16%*/
+}
+
+.related {
+    float: left;
+    width: 20%;
+    position: static;
+}
+
+aside {
+
+    float: right;
+    width: 30%;
+}
+aside>section {
+    float:left;
+    width: 60%
+}
+
+section + section {
+    float: right;
+    width: 40%;
+}
+
+footer {
+    clear: both;
+}
