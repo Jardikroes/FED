@@ -1,0 +1,159 @@
+p {
+    margin-bottom: 2em;
+}
+
+
+nav, ul, header, body {
+margin: 0 0;
+    padding: 0 0;
+}
+
+h1+p {
+    font-weight: 600;
+/*    color: white;*/
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    font-size: 2em;
+}
+
+h1+p:hover{
+    color: transparent;
+    text-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}
+
+h1 {
+    background-color: #FC0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 10em;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-top: 7.2rem;
+    text-align: center;
+    width: 10em;
+    clear: both;
+}
+
+h1:hover {
+    animation: .5s bounce infinite alternate;
+    border-radius: 20% 20% 20% 20%;
+    transform: rotate(360deg);
+    transition: all 500ms ease-out 1s;
+}
+
+@keyframes bounce { to {
+    border-radius: 50%;
+    transform: scale(.5);
+    background-color: #fc4;
+}}
+
+ul.flex {
+    background-color: #FC0;
+    box-shadow: -40em 0.5em 0em -0.1em black,
+                -20em 0.5em 0em -0.1em yellow,
+                2em 0.5em 0em -0.1em green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    float: left;
+    margin: 2em;
+    width: 20em;
+}
+
+form + p {
+    float: left;
+
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    border-radius: .3em;
+    box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+    border: none;
+    transition: .5s;
+    margin: .3em 0;
+    padding: .2em;
+}
+
+.flex>li {
+    list-style: none;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    background-color: lightgrey;
+    box-sizing: border-box;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    padding: 1em;
+    width: 50em;
+}
+
+article>header {
+    width: 50em;
+    margin: 0 auto;
+    clear: both;
+}
+
+header + footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 900px) {
+    ul.flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+    h1+p {
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+        font-size: 1.4em;
+    }
+
+    article>header {
+        width: 90%;
+        padding: 1em;
+        margin: 0 auto;
+}
+
+    section {
+        margin: 0 auto;
+        margin-bottom: 5em;
+        padding: 1em;
+        width: 100%;
+    }
+
+
+
+}
+
+header ~ section {
+    background-color: grey;
+}
+
+p:first-child {
+    background: grey;
+    width: 10em;
+}
